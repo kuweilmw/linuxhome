@@ -1,0 +1,17 @@
+static:
+ar -rc libmytest.a fun1.o fun2.o
+//to lib.a file
+
+
+gcc main.c -o main -L(kuweijianshuozaimulu) -l(kuwenjianming) -I(*.hwenjianshuozaimulu)
+
+// to main file to running
+
+
+dynamiclib:
+gcc -shared -fPIC -o libdylib.so maxsum.c showinit.c
+
+//to lib~.so file
+
+gcc  -o abase abase.c ./libdylib.so
+// to main file to running
